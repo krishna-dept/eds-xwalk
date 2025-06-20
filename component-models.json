@@ -281,5 +281,46 @@
         "value": ""
       }
     ]
+  },
+  {
+    "id": "blog-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Blog Title",
+        "description": "The title of the blog post."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "category",
+        "label": "Category",
+        "description": "The category or topic of the blog post."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "date",
+        "label": "Publish Date",
+        "description": "The publication date of the blog post."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "readTime",
+        "label": "Read Time",
+        "description": "The estimated reading time for the blog post."
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Thumbnail Image",
+        "description": "The thumbnail image for the blog post.",
+        "multi": false
+      }
+    ]
   }
 ]

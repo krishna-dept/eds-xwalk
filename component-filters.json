@@ -44,5 +44,11 @@
     "components": [
       "main-title-item"
     ]
+  },
+  {
+    "id": "related-blogs",
+    "components": [
+      "blog-item"
+    ]
   }
 ]
