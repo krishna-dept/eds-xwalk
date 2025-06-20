@@ -3,7 +3,7 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
 export default function decorate(block) {
   const benefitItems = Array.from(block.children);
 
-  benefitItems.forEach((item, index) => {
+  benefitItems.forEach((item) => {
     const title = item.children[0]?.textContent?.trim() || '';
     const description = item.children[1]?.innerHTML?.trim() || '';
     const image = createOptimizedPicture(item.children[2], 'benefit-image', 'Benefit Image');
@@ -35,7 +35,7 @@ export default function decorate(block) {
   blockWrapper.innerHTML = `
     <h2 id="emi-calculator-heading" class="emi-calculator-heading">What are the benefits of using a Personal Loan EMI Calculator?</h2>
     <div class="benefits-grid">
-      ${benefitItems.map(item => item.outerHTML).join('')}
+      ${benefitItems.map((item) => item.outerHTML).join('')}
     </div>
   `;
 
