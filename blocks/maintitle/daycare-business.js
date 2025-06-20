@@ -1,4 +1,3 @@
-```javascript
 import { createOptimizedPicture } from '../../scripts/aem.js';
 
 export default function decorate(block) {
@@ -73,4 +72,3 @@ function parseBlockFields(block) {
     ctaLink: block.children[5]?.querySelector('a')?.href || ''
   };
 }
-```
