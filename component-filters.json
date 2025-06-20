@@ -15,8 +15,8 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "quote"
+      "quote",
+      "fragment"
     ]
   },
   {
@@ -38,6 +38,12 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "emi-calculator-benefits",
+    "components": [
+      "benefit-item"
     ]
   }
 ]
