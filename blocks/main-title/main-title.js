@@ -2,6 +2,7 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
 
 export default function decorate(block) {
   const { title, subtitle, description, image, ctaText, ctaLink } = parseBlockFields(block);
+  console.log(title, subtitle, description, image, ctaText, ctaLink);
   const isAuthoring = block.dataset.auth === 'true';
 
   // Transform the block into semantic HTML
@@ -59,16 +60,17 @@ export default function decorate(block) {
     blockRoot.appendChild(ctaElement);
   }
 
-  return blockRoot;
+  block.replaceWith(blockRoot);
 }
 
 function parseBlockFields(block) {
+  debugger;
   return {
-    title: block.children[0]?.textContent?.trim() || '',
-    subtitle: block.children[1]?.textContent?.trim() || '',
-    description: block.children[2]?.innerHTML?.trim() || '',
-    image: block.children[3]?.querySelector('picture') || null,
-    ctaText: block.children[4]?.textContent?.trim() || '',
-    ctaLink: block.children[5]?.querySelector('a')?.href || ''
+    title: block.children[0].children[0]?.textContent?.trim() || '',
+    subtitle: block.children[0].children[1]?.textContent?.trim() || '',
+    description: block.children[0].children[2]?.innerHTML?.trim() || '',
+    image: block.children[0].children[3]?.querySelector('picture') || null,
+    ctaText: block.children[0].children[4]?.textContent?.trim() || '',
+    ctaLink: block.children[0].children[5]?.querySelector('a')?.href || ''
   };
 }
