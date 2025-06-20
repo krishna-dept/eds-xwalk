@@ -180,18 +180,6 @@
     ]
   },
   {
-    "id": "emi-calculator-benefits",
-    "fields": [
-      {
-        "component": "benefit-item",
-        "name": "emi-calculator-benefits",
-        "value": "",
-        "label": "emi-calculator-benefits",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
     "id": "benefit-item",
     "fields": [
       {
