@@ -32,7 +32,7 @@ export default function decorate(block) {
   blockWrapper.setAttribute('role', 'region');
   blockWrapper.setAttribute('aria-labelledby', 'emi-calculator-heading');
 
-  block.innerHTML = "";
+  block.innerHTML = '';
 
   blockWrapper.innerHTML = `
     <h2 id="emi-calculator-heading" class="emi-calculator-heading">What are the benefits of using a Personal Loan EMI Calculator?</h2>
