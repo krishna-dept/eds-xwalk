@@ -216,6 +216,54 @@
     ]
   },
   {
+    "id": "main-title-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "description": "The main title of the daycare business block."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "subtitle",
+        "label": "Subtitle",
+        "description": "A secondary subtitle for additional context."
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "valueType": "string",
+        "label": "Description",
+        "description": "A detailed description of the daycare business."
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "description": "An image representing the daycare business.",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "ctaText",
+        "label": "CTA Text",
+        "description": "The text for the call-to-action button."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "description": "The URL for the call-to-action button."
+      }
+    ]
+  },
+  {
     "id": "quote",
     "fields": [
       {
