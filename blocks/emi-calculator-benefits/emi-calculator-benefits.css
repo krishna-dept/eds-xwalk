@@ -1,0 +1,66 @@
+.emi-calculator-benefits {
+  padding: var(--spacing-l) var(--spacing-m);
+  background-color: var(--background-color-light, #f9f9f9);
+  border-radius: var(--border-radius-m, 8px);
+  box-shadow: var(--shadow-m, 0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.emi-calculator-heading {
+  font-size: var(--font-size-l, 24px);
+  font-weight: var(--font-weight-bold, 700);
+  color: var(--heading-color, #333);
+  margin-bottom: var(--spacing-m, 16px);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-l, 24px);
+}
+
+.benefit-item {
+  background-color: var(--background-color-base, #fff);
+  border-radius: var(--border-radius-s, 4px);
+  box-shadow: var(--shadow-s, 0 2px 4px rgba(0, 0, 0, 0.05));
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-m, 0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.benefit-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius-s, 4px) var(--border-radius-s, 4px) 0 0;
+}
+
+.benefit-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.benefit-image-wrapper img:hover {
+  transform: scale(1.05);
+}
+
+.benefit-content {
+  padding: var(--spacing-m, 16px);
+}
+
+.benefit-title {
+  font-size: var(--font-size-m, 20px);
+  font-weight: var(--font-weight-semibold, 600);
+  color: var(--text-color-primary, #333);
+  margin-bottom: var(--spacing-s, 8px);
+}
+
+.benefit-description {
+  font-size: var(--font-size-s, 16px);
+  color: var(--text-color-secondary, #666);
+  line-height: var(--line-height-base, 1.5);
+}
