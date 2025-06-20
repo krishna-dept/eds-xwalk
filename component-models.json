@@ -246,20 +246,6 @@
         "label": "Image",
         "description": "An image representing the daycare business.",
         "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "ctaText",
-        "label": "CTA Text",
-        "description": "The text for the call-to-action button."
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "ctaLink",
-        "label": "CTA Link",
-        "description": "The URL for the call-to-action button."
       }
     ]
   },
