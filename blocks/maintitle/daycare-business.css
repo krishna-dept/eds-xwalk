@@ -1,0 +1,76 @@
+```css
+.daycare-business {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-l, 24px);
+  padding: var(--spacing-m, 16px);
+  background-color: var(--background-color, #ffffff);
+  border-radius: var(--border-radius, 8px);
+  box-shadow: var(--shadow, 0 2px 8px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.daycare-business__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-s, 8px);
+}
+
+.daycare-business__title {
+  font-size: var(--heading-size, 24px);
+  font-weight: bold;
+  color: var(--heading-color, #333333);
+}
+
+.daycare-business__subtitle {
+  font-size: var(--subheading-size, 18px);
+  color: var(--subheading-color, #666666);
+}
+
+.daycare-business__description {
+  font-size: var(--body-size, 16px);
+  color: var(--body-color, #555555);
+  line-height: 1.6;
+}
+
+.daycare-business__image {
+  width: 100%;
+  border-radius: var(--image-border-radius, 8px);
+  overflow: hidden;
+}
+
+.daycare-business__cta {
+  display: inline-block;
+  padding: var(--spacing-s, 8px) var(--spacing-m, 16px);
+  background-color: var(--cta-background, #007bff);
+  color: var(--cta-color, #ffffff);
+  font-size: var(--cta-size, 16px);
+  text-decoration: none;
+  border-radius: var(--cta-border-radius, 4px);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.daycare-business__cta:hover {
+  background-color: var(--cta-hover-background, #0056b3);
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .daycare-business {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .daycare-business__header,
+  .daycare-business__description,
+  .daycare-business__cta {
+    max-width: 50%;
+  }
+
+  .daycare-business__image {
+    max-width: 40%;
+    margin-left: var(--spacing-l, 24px);
+  }
+}
+```
