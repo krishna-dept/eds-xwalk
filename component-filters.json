@@ -15,10 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "quotes",
-      "main-title",
-      "related-blogs"
+      "fragment"
     ]
   },
   {
@@ -45,7 +42,7 @@
   {
     "id": "main-title",
     "components": [
-      "main-title-item"
+      "main-title"
     ]
   },
   {
