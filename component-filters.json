@@ -15,7 +15,10 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "quotes",
+      "main-title",
+      "related-blogs"
     ]
   },
   {
