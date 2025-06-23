@@ -15,10 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "quotes",
-      "poonawala-title",
-      "related-blogs"
+      "fragment"
     ]
   },
   {
@@ -40,6 +37,12 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "daycare-guide",
+    "components": [
+      "daycare-guide-item"
     ]
   },
   {

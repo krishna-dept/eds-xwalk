@@ -180,6 +180,46 @@
     ]
   },
   {
+    "id": "daycare-guide-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "description": "Main title of the guide"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "subtitle",
+        "label": "Subtitle",
+        "description": "Subtitle of the guide"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "author",
+        "label": "Author",
+        "description": "Author of the guide"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "date",
+        "label": "Date",
+        "description": "Publication date of the guide"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "readTime",
+        "label": "Read Time",
+        "description": "Estimated read time"
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {
