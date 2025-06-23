@@ -15,10 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "quotes",
-      "main-title",
-      "related-blogs"
+      "fragment"
     ]
   },
   {
@@ -43,9 +40,9 @@
     ]
   },
   {
-    "id": "main-title",
+    "id": "poonawala-title",
     "components": [
-      "main-title"
+      "poonawala-title"
     ]
   },
   {
