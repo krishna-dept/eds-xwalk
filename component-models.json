@@ -142,55 +142,6 @@
     ]
   },
   {
-    "id": "blog-item",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "title",
-        "label": "Title",
-        "description": "Title of the blog post."
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "date",
-        "label": "Date",
-        "description": "Publication date of the blog post."
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "readTime",
-        "label": "Read Time",
-        "description": "Estimated read time for the blog post."
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "description": "Thumbnail image for the blog post.",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "value": "",
-        "label": "Description",
-        "valueType": "string",
-        "description": "Short description or excerpt of the blog post."
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "category",
-        "label": "Category",
-        "description": "Category of the blog post."
-      }
-    ]
-  },
-  {
     "id": "card",
     "fields": [
       {
@@ -353,6 +304,47 @@
         "name": "author",
         "label": "Author",
         "value": ""
+      }
+    ]
+  },
+  {
+    "id": "blog-item",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "thumbnail",
+        "label": "Thumbnail Image",
+        "description": "Upload a thumbnail image for the blog post.",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "category",
+        "label": "Category",
+        "description": "Category of the blog post."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "description": "Title of the blog post."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "date",
+        "label": "Date",
+        "description": "Publish date of the blog post."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "readTime",
+        "label": "Read Time",
+        "description": "Estimated read time for the blog post."
       }
     ]
   }

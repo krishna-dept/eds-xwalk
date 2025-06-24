@@ -1,0 +1,85 @@
+{
+      "definitions": [
+        {
+          "title": "Related Blogs Block",
+          "id": "related-blogs",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Related Blogs",
+                  "filter": "related-blogs"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Blog Item",
+          "id": "blog-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Blog Item",
+                  "model": "blog-item"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "models": [
+        {
+          "id": "blog-item",
+          "fields": [
+            {
+              "component": "reference",
+              "valueType": "string",
+              "name": "thumbnail",
+              "label": "Thumbnail Image",
+              "description": "Upload a thumbnail image for the blog post.",
+              "multi": false
+            },
+            {
+              "component": "text",
+              "valueType": "string",
+              "name": "category",
+              "label": "Category",
+              "description": "Category of the blog post."
+            },
+            {
+              "component": "text",
+              "valueType": "string",
+              "name": "title",
+              "label": "Title",
+              "description": "Title of the blog post."
+            },
+            {
+              "component": "text",
+              "valueType": "string",
+              "name": "date",
+              "label": "Date",
+              "description": "Publish date of the blog post."
+            },
+            {
+              "component": "text",
+              "valueType": "string",
+              "name": "readTime",
+              "label": "Read Time",
+              "description": "Estimated read time for the blog post."
+            }
+          ]
+        }
+      ],
+      "filters": [
+        {
+          "id": "related-blogs",
+          "components": [
+            "blog-item"
+          ]
+        }
+      ]
+    }

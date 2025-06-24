@@ -15,14 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "blogs-component"
-    ]
-  },
-  {
-    "id": "blogs-component",
-    "components": [
-      "blog-item"
+      "fragment"
     ]
   },
   {
@@ -56,6 +49,12 @@
     "id": "poonawala-title",
     "components": [
       "poonawala-title"
+    ]
+  },
+  {
+    "id": "related-blogs",
+    "components": [
+      "blog-item"
     ]
   }
 ]
