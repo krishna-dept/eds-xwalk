@@ -1,24 +1,28 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 
-    export default function decorate(block) {
-      // Parse the raw div structure
-      const blogItems = Array.from(block.children);
+export default function decorate(block) {
+  // Parse the raw div structure
+  const blogItems = Array.from(block.children);
 
-      // Transform each blog item into semantic HTML
-      blogItems.forEach((item) => {
-        const thumbnail = item.children[0]?.querySelector('picture');
-        const category = item.children[1]?.textContent?.trim() || '';
-        const title = item.children[2]?.textContent?.trim() || '';
-        const date = item.children[3]?.textContent?.trim() || '';
-        const readTime = item.children[4]?.textContent?.trim() || '';
+  // Transform each blog item into semantic HTML
+  blogItems.forEach((item) => {
+    const thumbnail = item.children[0]?.querySelector('picture');
+    const category = item.children[1]?.textContent?.trim() || '';
+    const title = item.children[2]?.querySelector('a')?.innerHTML?.trim() || '';
+    const date = item.children[3]?.textContent?.trim() || '';
+    const readTime = item.children[4]?.textContent?.trim() || '';
 
-        // Optimize the thumbnail image
-        // if (thumbnail) {
-        //   createOptimizedPicture(thumbnail, 'fill', false, item.parentElement);
-        // }
+    // Optimize the thumbnail image
+    if (thumbnail) {
+      const pictureSrc = thumbnail.querySelector('img')?.src;
+      createOptimizedPicture(pictureSrc, '', false, [
+        { media: '(min-width: 600px)', width: '411' },
+        { width: '257' },
+      ]);
+    }
 
-        // Wrap the content in semantic HTML
-        item.innerHTML = `
+    // Wrap the content in semantic HTML
+    item.innerHTML = `
           <article class="blog-item">
             <div class="blog-thumbnail">
               ${thumbnail ? thumbnail.outerHTML : ''}
@@ -33,5 +37,5 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
             </div>
           </article>
         `;
-      });
-    }
+  });
+}
