@@ -15,12 +15,11 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "blogs"
+      "fragment"
     ]
   },
   {
-    "id": "blogs",
+    "id": "blogs-component",
     "components": [
       "blog-item"
     ]
