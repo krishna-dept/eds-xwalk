@@ -15,8 +15,13 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "daycare-guide"
+      "fragment"
+    ]
+  },
+  {
+    "id": "blogs",
+    "components": [
+      "blog-item"
     ]
   },
   {
@@ -50,12 +55,6 @@
     "id": "poonawala-title",
     "components": [
       "poonawala-title"
-    ]
-  },
-  {
-    "id": "related-blogs",
-    "components": [
-      "blog-item"
     ]
   }
 ]
