@@ -1,0 +1,74 @@
+{
+  "definitions": [
+    {
+      "title": "Article Title",
+      "id": "article-title",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Article Title",
+              "model": "article-title"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "article-title",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "category",
+          "label": "Category",
+          "description": "Category of the guide (e.g., Business Loan)"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "title",
+          "label": "Title",
+          "description": "Main title of the guide"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "subtitle",
+          "label": "Subtitle",
+          "description": "Subtitle or description of the guide"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "author",
+          "label": "Author",
+          "description": "Author or team name"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "date",
+          "label": "Date",
+          "description": "Publication date"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "readTime",
+          "label": "Read Time",
+          "description": "Estimated read time (e.g., 3 min read)"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "article-title",
+      "components": ["article-title"]
+    }
+  ]
+}
