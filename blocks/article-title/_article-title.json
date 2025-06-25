@@ -61,6 +61,14 @@
           "name": "readTime",
           "label": "Read Time",
           "description": "Estimated read time (e.g., 3 min read)"
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "logo",
+          "label": "Logo",
+          "description": "Logo image for the article",
+          "multi": false
         }
       ]
     }
