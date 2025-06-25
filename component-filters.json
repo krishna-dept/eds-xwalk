@@ -21,7 +21,7 @@
   {
     "id": "article-title",
     "components": [
-      "article-title"
+      "article-title-item"
     ]
   },
   {

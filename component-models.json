@@ -142,50 +142,51 @@
     ]
   },
   {
-    "id": "article-title",
+    "id": "article-title-item",
     "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "category",
-        "label": "Category",
-        "description": "Category of the guide (e.g., Business Loan)"
-      },
       {
         "component": "text",
         "valueType": "string",
         "name": "title",
         "label": "Title",
-        "description": "Main title of the guide"
+        "description": "The main title of the article."
       },
       {
-        "component": "reference",
+        "component": "richtext",
+        "name": "subtitle",
+        "value": "",
+        "label": "Subtitle",
         "valueType": "string",
-        "name": "logo",
-        "label": "Logo",
-        "description": "Logo image for the article",
-        "multi": false
+        "description": "A brief subtitle or description for the article."
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "author",
         "label": "Author",
-        "description": "Author or team name"
+        "description": "The author of the article."
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "date",
         "label": "Date",
-        "description": "Publication date"
+        "description": "The publication date of the article."
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "readTime",
         "label": "Read Time",
-        "description": "Estimated read time (e.g., 3 min read)"
+        "description": "Estimated reading time for the article."
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "logo",
+        "label": "Logo",
+        "description": "Logo or icon for the author or organization.",
+        "multi": false
       }
     ]
   },
