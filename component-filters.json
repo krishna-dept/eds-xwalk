@@ -15,15 +15,18 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "related-blogs",
-      "article-banner"
+      "fragment"
     ]
   },
   {
-    "id": "article-banner",
+    "id": "article-title",
     "components": [
-      "article-banner"
+      "title",
+      "subtitle",
+      "author",
+      "date",
+      "read-time",
+      "logo"
     ]
   },
   {
