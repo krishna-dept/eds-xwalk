@@ -15,9 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "related-blogs",
-      "daycare-business-guide"
+      "fragment"
     ]
   },
   {
@@ -45,12 +43,6 @@
     "id": "daycare-business-guide",
     "components": [
       "daycare-business-guide"
-    ]
-  },
-  {
-    "id": "daycare-guide",
-    "components": [
-      "daycare-guide-item"
     ]
   },
   {
