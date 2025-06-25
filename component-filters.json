@@ -15,7 +15,9 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "related-blogs",
+      "article-banner"
     ]
   },
   {
