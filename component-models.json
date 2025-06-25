@@ -216,6 +216,14 @@
         "name": "readTime",
         "label": "Read Time",
         "description": "Estimated reading time."
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "logo",
+        "label": "Logo Image",
+        "description": "Logo image for the guide.",
+        "multi": false
       }
     ]
   },

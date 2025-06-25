@@ -5,6 +5,9 @@
   background-color: var(--background-color, #fff);
   border-radius: var(--border-radius, 8px);
   box-shadow: var(--shadow, 0 2px 4px rgba(0, 0, 0, 0.1));
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .daycare-business-guide__header {
@@ -27,7 +30,9 @@
   font-size: var(--meta-size, 14px);
   color: var(--meta-color, #777);
   display: flex;
+  align-items: center;
   gap: var(--spacing-m, 10px);
+  margin-top: var(--spacing-m, 10px);
 }
 
 .daycare-business-guide__author,
@@ -35,4 +40,12 @@
 .daycare-business-guide__read-time {
   display: flex;
   align-items: center;
+}
+
+.daycare-business-guide__logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: var(--spacing-s, 10px);
 }
