@@ -142,79 +142,6 @@
     ]
   },
   {
-    "id": "title",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "title",
-        "label": "Title",
-        "description": "The main title of the article."
-      }
-    ]
-  },
-  {
-    "id": "subtitle",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "subtitle",
-        "label": "Subtitle",
-        "description": "A brief subtitle or description for the article."
-      }
-    ]
-  },
-  {
-    "id": "author",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "author",
-        "label": "Author",
-        "description": "The author of the article."
-      }
-    ]
-  },
-  {
-    "id": "date",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "date",
-        "label": "Date",
-        "description": "The publication date of the article."
-      }
-    ]
-  },
-  {
-    "id": "read-time",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "readTime",
-        "label": "Read Time",
-        "description": "The estimated read time for the article."
-      }
-    ]
-  },
-  {
-    "id": "logo",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "logo",
-        "label": "Logo Image",
-        "description": "The logo image for the article.",
-        "multi": false
-      }
-    ]
-  },
-  {
     "id": "card",
     "fields": [
       {
@@ -249,6 +176,46 @@
         "name": "rows",
         "value": "",
         "label": "Rows"
+      }
+    ]
+  },
+  {
+    "id": "daycare-business-guide",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "label": "Heading",
+        "description": "Main heading for the guide."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "subheading",
+        "label": "Subheading",
+        "description": "Subheading for the guide."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "author",
+        "label": "Author",
+        "description": "Author or team name."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "date",
+        "label": "Date",
+        "description": "Publication date."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "readTime",
+        "label": "Read Time",
+        "description": "Estimated reading time."
       }
     ]
   },

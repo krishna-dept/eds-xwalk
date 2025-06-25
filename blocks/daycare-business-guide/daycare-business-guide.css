@@ -1,0 +1,38 @@
+.daycare-business-guide {
+  font-family: Arial, sans-serif;
+  color: var(--text-color, #333);
+  padding: var(--spacing-l, 20px);
+  background-color: var(--background-color, #fff);
+  border-radius: var(--border-radius, 8px);
+  box-shadow: var(--shadow, 0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.daycare-business-guide__header {
+  margin-bottom: var(--spacing-m, 15px);
+}
+
+.daycare-business-guide__heading {
+  font-size: var(--heading-size, 24px);
+  font-weight: bold;
+  margin: 0;
+}
+
+.daycare-business-guide__subheading {
+  font-size: var(--subheading-size, 18px);
+  font-weight: 500;
+  margin: var(--spacing-s, 5px) 0 0;
+}
+
+.daycare-business-guide__meta {
+  font-size: var(--meta-size, 14px);
+  color: var(--meta-color, #777);
+  display: flex;
+  gap: var(--spacing-m, 10px);
+}
+
+.daycare-business-guide__author,
+.daycare-business-guide__date,
+.daycare-business-guide__read-time {
+  display: flex;
+  align-items: center;
+}

@@ -15,20 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "related-blogs",
-      "article-title"
-    ]
-  },
-  {
-    "id": "article-title",
-    "components": [
-      "title",
-      "subtitle",
-      "author",
-      "date",
-      "read-time",
-      "logo"
+      "fragment"
     ]
   },
   {
@@ -50,6 +37,12 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "daycare-business-guide",
+    "components": [
+      "daycare-business-guide"
     ]
   },
   {
