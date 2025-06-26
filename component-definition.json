@@ -287,8 +287,23 @@
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "TOC",
+                  "name": "Table of Contents",
                   "model": "toc"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "TOC Item",
+          "id": "toc-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "TOC Item",
+                  "model": "toc-item"
                 }
               }
             }

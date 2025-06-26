@@ -8,8 +8,23 @@
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "TOC",
+              "name": "Table of Contents",
               "model": "toc"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "TOC Item",
+      "id": "toc-item",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "TOC Item",
+              "model": "toc-item"
             }
           }
         }
@@ -23,19 +38,35 @@
         {
           "component": "text",
           "name": "title",
-          "label": "TOC Title",
-          "valueType": "string",
-          "description": "The title of the Table of Contents."
+          "label": "Title",
+          "valueType": "string"
+        }
+      ]
+    },
+    {
+      "id": "toc-item",
+      "fields": [
+        {
+          "component": "text",
+          "name": "itemTitle",
+          "label": "Item Title",
+          "valueType": "string"
         },
         {
           "component": "richtext",
-          "name": "content",
-          "label": "Content",
-          "valueType": "string",
-          "description": "The content for the TOC."
+          "name": "itemContent",
+          "label": "Item Content",
+          "valueType": "string"
         }
       ]
     }
   ],
-  "filters": []
+  "filters": [
+    {
+      "id": "toc",
+      "components": [
+        "toc-item"
+      ]
+    }
+  ]
 }

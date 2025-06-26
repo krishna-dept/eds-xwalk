@@ -459,16 +459,25 @@
       {
         "component": "text",
         "name": "title",
-        "label": "TOC Title",
-        "valueType": "string",
-        "description": "The title of the Table of Contents."
+        "label": "Title",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "toc-item",
+    "fields": [
+      {
+        "component": "text",
+        "name": "itemTitle",
+        "label": "Item Title",
+        "valueType": "string"
       },
       {
         "component": "richtext",
-        "name": "content",
-        "label": "Content",
-        "valueType": "string",
-        "description": "The content for the TOC."
+        "name": "itemContent",
+        "label": "Item Content",
+        "valueType": "string"
       }
     ]
   }
