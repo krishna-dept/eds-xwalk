@@ -9,34 +9,38 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.daycare-guide h1 {
-  font-size: 24px;
+.daycare-guide .category {
+  font-size: 18px; /* Decreased font size for category */
   margin: 0 0 10px;
-  color: #000;
+  color: #555;
 }
 
-.daycare-guide h2 {
-  font-size: 20px;
+.daycare-guide h1 {
+  font-size: 24px;
   margin: 0 0 20px;
-  color: #555;
+  color: #000;
 }
 
 .daycare-guide .meta {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 20px; /* Space between logo and author-datetime container */
   font-size: 14px;
   color: #777;
   margin-bottom: 20px;
 }
 
-.daycare-guide .meta span:not(:last-child)::after {
-  content: '•';
-  margin: 0 8px;
+.daycare-guide .author-datetime {
+  align-items: center;
+  gap: 10px; /* Space between author, separator, and date-time */
+}
+
+.daycare-guide .author-datetime .separator {
+  margin: 0 8px; /* Space around the separator */
 }
 
 .daycare-guide .logo {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-top: 10px;
 }
