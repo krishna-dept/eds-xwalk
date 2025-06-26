@@ -1,0 +1,42 @@
+.toc-block {
+  display: flex;
+  gap: 2rem;
+}
+
+.toc-container {
+  width: 25%;
+  border-right: 1px solid var(--border-color, #ccc);
+  padding-right: 1rem;
+}
+
+.toc-list {
+  list-style: none;
+  padding: 0;
+}
+
+.toc-list li {
+  margin: 0.5rem 0;
+}
+
+.toc-list a {
+  text-decoration: none;
+  color: var(--link-color, #007bff);
+}
+
+.toc-list a.active {
+  font-weight: bold;
+  color: var(--active-link-color, #0056b3);
+}
+
+.content-container {
+  width: 75%;
+  padding-left: 1rem;
+}
+
+.content-container h2,
+.content-container h3,
+.content-container h4,
+.content-container h5,
+.content-container h6 {
+  scroll-margin-top: 1rem;
+}

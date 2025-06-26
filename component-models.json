@@ -452,5 +452,24 @@
         "description": "Estimated read time for the blog post."
       }
     ]
+  },
+  {
+    "id": "toc",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "TOC Title",
+        "valueType": "string",
+        "description": "The title of the Table of Contents."
+      },
+      {
+        "component": "richtext",
+        "name": "content",
+        "label": "Content",
+        "valueType": "string",
+        "description": "The content for the TOC."
+      }
+    ]
   }
 ]
