@@ -15,9 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "daycare-guide",
-      "toc"
+      "fragment"
     ]
   },
   {
@@ -63,6 +61,12 @@
     "id": "related-blogs",
     "components": [
       "blog-item"
+    ]
+  },
+  {
+    "id": "toc",
+    "components": [
+      "toc-item"
     ]
   }
 ]
