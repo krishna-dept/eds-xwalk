@@ -454,29 +454,20 @@
     ]
   },
   {
-    "id": "toc",
-    "fields": [
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Title",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
     "id": "toc-item",
     "fields": [
       {
         "component": "text",
-        "name": "itemTitle",
-        "label": "Item Title",
-        "valueType": "string"
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "description": "The title of the TOC item"
       },
       {
         "component": "richtext",
-        "name": "itemContent",
-        "label": "Item Content",
+        "name": "content",
+        "value": "",
+        "label": "Content",
         "valueType": "string"
       }
     ]
