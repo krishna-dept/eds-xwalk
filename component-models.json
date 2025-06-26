@@ -277,6 +277,54 @@
     ]
   },
   {
+    "id": "daycare-guide",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "description": "The main title of the guide."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "subtitle",
+        "label": "Subtitle",
+        "description": "A brief subtitle or description."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "author",
+        "label": "Author",
+        "description": "The author or team name."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "date",
+        "label": "Date",
+        "description": "The publication date."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "readTime",
+        "label": "Read Time",
+        "description": "Estimated reading time."
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "logoSrc",
+        "label": "Logo Image",
+        "description": "URL or path to the logo image.",
+        "multi": false
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {

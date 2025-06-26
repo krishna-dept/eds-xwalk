@@ -1,0 +1,42 @@
+.daycare-guide {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.daycare-guide h1 {
+  font-size: 24px;
+  margin: 0 0 10px;
+  color: #000;
+}
+
+.daycare-guide h2 {
+  font-size: 20px;
+  margin: 0 0 20px;
+  color: #555;
+}
+
+.daycare-guide .meta {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.daycare-guide .meta span:not(:last-child)::after {
+  content: '•';
+  margin: 0 8px;
+}
+
+.daycare-guide .logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
